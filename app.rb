@@ -1,11 +1,14 @@
 require 'sinatra/base'
+require './lib/bookmark_base'
 
 class BookmarkManager < Sinatra::Base
   get '/' do
     erb :index
   end
+  
 
   get '/bookmarks' do
+    @bookmarks = BookmarkBase.new(['facebook']).all
     erb :bookmarks
   end
 
