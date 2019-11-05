@@ -1,9 +1,11 @@
 require 'bookmark_base'
 
 describe BookmarkBase do
-  subject(:bookmarkbase) { BookmarkBase.new(['google', 'facebook']) }
+  it 'returns a list of bookmarks' do
+    bookmarks = BookmarkBase.all
 
-  it 'shows a list' do
-    expect(bookmarkbase.all).to eq(['google', 'facebook'])
+    expect(bookmarks).to include "http://makers.tech"
+    expect(bookmarks).to include "http://www.destroyallsoftware.com"
+    expect(bookmarks).to include "http://www.google.com"
   end
 end

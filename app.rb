@@ -5,10 +5,10 @@ class BookmarkManager < Sinatra::Base
   get '/' do
     erb :index
   end
-  
+
 
   get '/bookmarks' do
-    @bookmarks = BookmarkBase.new(['facebook']).all
+    @bookmarks = BookmarkBase.all
     erb :bookmarks
   end
 

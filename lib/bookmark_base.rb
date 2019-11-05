@@ -1,9 +1,9 @@
 class BookmarkBase
-  def initialize(bookmarks = [])
-    @bookmarks = bookmarks
-  end
-
-  def all
-    @bookmarks
+  def self.all
+    [
+      "http://www.google.com",
+      "http://www.destroyallsoftware.com",
+      "http://makers.tech"      
+    ]
   end
 end
