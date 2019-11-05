@@ -5,7 +5,7 @@ gem 'rspec'
 gem 'shotgun'
 gem 'sinatra'
 
-
+gem 'pg'
 gem 'rake'
 gem 'rubocop'
 gem 'simplecov', require: false
