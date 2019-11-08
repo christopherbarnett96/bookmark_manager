@@ -4,6 +4,7 @@ gem 'capybara'
 gem 'rspec'
 gem 'shotgun'
 gem 'sinatra'
+gem 'launchy'
 
 gem 'pg'
 gem 'rake'
