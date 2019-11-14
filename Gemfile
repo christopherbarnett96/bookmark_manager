@@ -5,6 +5,7 @@ gem 'rspec'
 gem 'shotgun'
 gem 'sinatra'
 gem 'launchy'
+gem 'rack'
 
 gem 'pg'
 gem 'rake'
